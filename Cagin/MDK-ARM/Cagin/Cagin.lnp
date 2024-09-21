@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"cagin\startup_stm32f407xx.o"
+"cagin\main.o"
+"cagin\gpio.o"
+"cagin\can.o"
+"cagin\stm32f4xx_it.o"
+"cagin\stm32f4xx_hal_msp.o"
+"cagin\stm32f4xx_hal_can.o"
+"cagin\stm32f4xx_hal_rcc.o"
+"cagin\stm32f4xx_hal_rcc_ex.o"
+"cagin\stm32f4xx_hal_flash.o"
+"cagin\stm32f4xx_hal_flash_ex.o"
+"cagin\stm32f4xx_hal_flash_ramfunc.o"
+"cagin\stm32f4xx_hal_gpio.o"
+"cagin\stm32f4xx_hal_dma_ex.o"
+"cagin\stm32f4xx_hal_dma.o"
+"cagin\stm32f4xx_hal_pwr.o"
+"cagin\stm32f4xx_hal_pwr_ex.o"
+"cagin\stm32f4xx_hal_cortex.o"
+"cagin\stm32f4xx_hal.o"
+"cagin\stm32f4xx_hal_exti.o"
+"cagin\stm32f4xx_hal_tim.o"
+"cagin\stm32f4xx_hal_tim_ex.o"
+"cagin\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Cagin\Cagin.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Cagin.map" -o Cagin\Cagin.axf
